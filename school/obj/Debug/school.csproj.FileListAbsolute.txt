@@ -25,3 +25,5 @@ C:\Users\valdo\source\repos\school\school\obj\Debug\school.pdb
 C:\Users\valdo\source\repos\school\school\obj\Debug\Pages\AddService.g.cs
 C:\Users\valdo\source\repos\school\school\obj\Debug\Pages\AddService.baml
 C:\Users\valdo\source\repos\school\school\obj\Debug\school.csproj.AssemblyReference.cache
+C:\Users\valdo\source\repos\school\school\obj\Debug\AddClientService.g.cs
+C:\Users\valdo\source\repos\school\school\obj\Debug\AddClientService.baml

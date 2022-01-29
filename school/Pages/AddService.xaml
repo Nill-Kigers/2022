@@ -40,6 +40,7 @@
         <TextBox  Text="{Binding DurationInSeconds}" x:Name="Duration" Grid.Column="1" Grid.Row="2" Width="300" HorizontalAlignment="left"></TextBox>
         <TextBox  Text="{Binding Description}" x:Name="Description" Grid.Column="1" Grid.Row="3" Width="300" HorizontalAlignment="left"></TextBox>
         <TextBox  Text="{Binding Discount}" x:Name="Discount" Grid.Column="1" Grid.Row="4" Width="300" HorizontalAlignment="left"></TextBox>
+        <Button Content="Сохранить" Grid.ColumnSpan="2"   Width="100" Grid.Row="5" Name="BtnSave" Click="BtnSave_Click" Background="#FFFFE9F9" Margin="200 5 0 0" FontFamily="Century Gothic"></Button>
         <StackPanel Orientation="Vertical"
             Grid.Column="2"
             Grid.RowSpan="10">
@@ -60,6 +61,5 @@
                 Click="SelectedPhoto_Click"
                 Margin="15 10 0 0"/>
         </StackPanel>
-        <Button Content="Сохранить" Grid.ColumnSpan="2"   Width="100" Grid.Row="5" Name="BtnSave" Click="BtnSave_Click" Background="#FFFFE9F9" Margin="200 5 0 0" FontFamily="Century Gothic"></Button>
     </Grid>
 </Page>
