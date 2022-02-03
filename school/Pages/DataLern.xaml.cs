@@ -25,6 +25,7 @@ namespace school.Pages
         {
             InitializeComponent();
             ListView.ItemsSource = schoolEntities.GetContext().Services.ToList();
+            
         }
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
@@ -99,7 +100,50 @@ namespace school.Pages
 
         private void BtnSignUp_Click(object sender, RoutedEventArgs e)
         {
-           
+            FrameWindow.MainFrame.Navigate(new AddClientService(null));
         }
+
+        private void TB1_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+                /*
+        public string CostString
+        {
+           get
+           {
+               // тут должно быть понятно - преобразование в строку с нужной точностью
+               return Cost.ToString("#.##");
+           }
+        }
+
+        public string CostWithDiscount
+        {
+           get
+           {
+               // Convert.ToDecimal - преобразует double в decimal
+               // Discount ?? 0 - разнуливает "Nullable" переменную
+               return (Cost * Convert.ToDecimal(1 - Discount ?? 0)).ToString("#.##");
+           }
+        }
+
+        public Boolean HasDiscount
+        {
+           get
+           {
+               return Discount > 0;
+           }
+        }
+
+        private void TB1_Loaded(object sender, RoutedEventArgs e)
+        {
+           if (HasDiscount = true) 
+           { 
+           TextBlock textBlock = new TextBlock(new Run("This text will render with the strikethrough effect."));
+           textBlock.TextDecorations = TextDecorations.Strikethrough;
+           }
+
+        }
+        */
     }
 }

@@ -35,12 +35,15 @@
 
         <TextBlock  Text="{Binding Title}" x:Name="Title" Grid.Row="0" Grid.Column="1" Width="300" HorizontalAlignment="Left"></TextBlock>
         <TextBlock  Text="{Binding DurationInSeconds}" x:Name="Duration" Grid.Column="1" Grid.Row="1" Width="300" HorizontalAlignment="left"></TextBlock>
-        <ComboBox   ItemsSource="{Binding ClientService}"
-                SelectedItem="{Binding LastName}" Grid.Row="2" Grid.Column="1">
+        <ComboBox Grid.Row="2" Grid.Column="1">
             <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <Label Content="{Binding FirstName}"/>
-                </DataTemplate>
+                
+                    <MultiBinding StringFormat="{}{0} {1} {2}">
+                        <Binding Path="LastName"/>
+                        <Binding Path="FirstName"/>
+                        <Binding Path="MiddleName"/>
+                    </MultiBinding>
+                
             </ComboBox.ItemTemplate>
         </ComboBox>
         <StackPanel Orientation="Vertical"
